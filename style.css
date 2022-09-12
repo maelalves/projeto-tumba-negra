@@ -20,10 +20,11 @@ body {
     min-width: 375px;
     min-height: 667px;
     max-width: 1920px;
-    max-height: 1080px;
-    background-image: linear-gradient(95deg, rgb(140, 7, 7), rgb(0, 0, 0));
+    max-height: 185vh;
     color: white;
     position: relative;
+    background-image: linear-gradient(to top, rgb(140, 7, 7), rgb(0, 0, 0));
+    background-repeat: no-repeat;
 }
 
 .caixa {
