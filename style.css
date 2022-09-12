@@ -1,0 +1,492 @@
+@import url(utf-8);
+@font-face {
+    font-family: 'luxo';
+    src: url(font/luxoorea/Luxoorea.otf);
+    font-family: 'romanus';
+    src: url(font/ROMANUS.otf);
+    font-family: 'gotico';
+    src: url(font/Elementary_Gothic_Bookhand.otf);
+    font-family: 'iberica';
+    src: url(font/LongaIberica-DEMO.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-width: 375px;
+    min-height: 667px;
+    max-width: 1920px;
+    max-height: 1080px;
+    background-image: linear-gradient(95deg, rgb(140, 7, 7), rgb(0, 0, 0));
+    color: white;
+    position: relative;
+}
+
+.caixa {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+section p.sub_titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(151, 114, 21);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+
+}
+
+section p.caixa_text {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+#titulo {
+    font-family: 'gotico';
+    font-size: 5em;
+    padding: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.411);
+
+}
+
+img {
+    max-width: 360px;
+    max-height: 300%;
+
+
+}
+
+.caixa2 img {
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: 7vh;
+}
+
+.caixa2 {
+    display: inline-block;
+    margin-left: 45px;
+
+
+}
+
+.caixa_text {
+    padding: 10px;
+    width: 700px;
+    text-align: justify;
+    text-indent: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+
+}
+
+.icons img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 15px;
+    position: relative;
+    top: -38px;
+    left: 31vw;
+
+}
+
+.contato {
+    position: relative;
+    width: 48vw;
+    font-size: 28px;
+    padding: 1px;
+    top: -60px;
+    left: 23vw;
+    margin: 1px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.356);
+
+}
+
+/*config da seta de ação*/
+.center-con {
+    display: flex;
+    height: 14vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 15px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+
+/*config code btn whatsapp*/
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.servicos {
+    display: flex;
+    position: relative;
+    bottom: 25vh;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    margin-top: 30vh;
+    margin-bottom: 90px;
+    
+
+}
+
+.trabalhos {
+    font-weight: bold;    
+    font-size: 11pt;
+    width: 25vw;
+    height: 55vh;
+    padding: 8px;
+    margin-right: 30px;
+    position: relative;
+    left: 5vw;
+    line-height: 15pt;
+}
+
+.consultas {
+    font-weight: bold;
+    font-size: 11pt;
+    width: 25vw;
+    height: 55vh;
+    padding: 8px;
+    margin-right: 30px;
+    position: relative;
+    left: 6.5vw;
+    line-height: 15pt;
+
+    }
+
+.ensinamentos {
+    font-weight: bold;
+    font-size: 11pt;
+    width: 25vw;
+    height: 55vh;
+    padding: 8px;
+    position: relative;
+    left: 8vw;
+    line-height: 15pt;
+
+    }
+
+.sub-titulo{
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    text-decoration: underline rgb(192, 189, 194);
+}
+
+.text-slides{
+    font-size: 11pt;
+}
+
+/*slides*/
+
+ .div-slider {
+     width: auto;
+     height: 300px;
+     text-align: center;
+     position: relative;
+     right: 290px;
+    }
+
+ .slides-front {
+     padding: 0;
+     width: 980px;
+     height: 370px;
+     display: block;
+     margin: auto;
+     position: relative;
+    }
+
+ .slides-front * {
+     user-select: none;
+     -ms-user-select: none;
+     -moz-user-select: none;
+     -khtml-user-select: none;
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+    }
+
+ .slides-front input {
+     display: none;
+    }
+
+ .slide-container {
+     display: block;
+    }
+
+    /*config imagens*/
+ .slide {     
+     opacity: 0;
+     
+     display: block;
+     position: relative;
+     right: 2%;
+
+     transform: scale(0);
+
+     transition: all .7s ease-in-out 0.1s;
+    }
+
+ .slide-trabalho img {
+    max-width: 600px;
+    max-height: 240px;
+    position: relative;
+    top: 10vh;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    
+
+    }
+
+.slide-cons img{
+    max-width: 600px;
+    max-height: 240px;
+    position: relative;
+    top: 10vh;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+
+    }
+
+.slide-ens img{
+    max-width: 600px;
+    max-height: 240px;
+    position: relative;
+    top: 2vh;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+}
+
+    /*cofig as > e do fundo*
+ .nav label {
+     width: 150px;
+     height: 20%;
+     display: none;
+     position: absolute;
+     opacity: 0;
+     z-index: 9;
+     cursor: pointer;
+     transition: opacity .2s;
+     color: rgb(182, 162, 162);
+     font-size: 16pt;
+     text-align: center;
+     line-height: 380px;
+     font-family: "Varela Round", sans-serif;
+     background-color: rgba(255, 255, 255, .3);
+     text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    }*/
+
+.slide:hover+.nav label {
+    opacity: 0.5;
+}  
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked+.slide-container .slide {
+     opacity: 1;
+
+     transform: scale(1);
+
+     transition: opacity 1s ease-in-out 0.1s;
+    }
+
+input:checked+.slide-container .nav label {
+     display: block;
+    }
+
+.nav-dots {
+     width: 100%;
+     bottom: 9px;
+     height: 11px;
+     display: block;
+     position: relative;
+     text-align: center;
+    }
+
+.nav-dots .nav-dot {
+     top: 375px;
+     width: 11px;
+     height: 11px;
+     margin: 0 4px;
+     position: relative;
+     border-radius: 100%;
+     display: inline-block;
+     background-color: rgba(0, 0, 0, 0.6);
+     
+    }
+
+.nav-dots .nav-dot:hover {
+     cursor: pointer;
+     background-color: rgba(0, 0, 0, 0.8);
+    }
+
+input#img-1:checked~.nav-dots label#img-dot-1,
+input#img-2:checked~.nav-dots label#img-dot-2,
+input#img-3:checked~.nav-dots label#img-dot-3 {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+/*footer*/
+footer {
+    display: flex;
+    background-color: rgb(26, 11, 11);
+    max-width: 100vw;
+    height: 10vh;
+    padding: 9px;
+    bottom: 0px;
+    font-size: 13px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 20vh;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(226, 226, 238, 0.726);
+}
+
+.credito_dev {
+    position: relative;
+    left: 30vw;
+    top: 15px;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+    padding-right: 5vw;
+    margin-right: 10px;
+    border-right: 1px solid white;
+
+}
+
+.credito_terc {
+    position: relative;
+    top: 15px;
+    left: 35vw;
+    height: 70px;
+
+}
